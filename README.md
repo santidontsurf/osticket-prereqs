@@ -30,17 +30,31 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 Using Microsoft Azure portal(portal.azure.com) we will create a virtual machine (VM) to use as a testing ground for this project and protect our physical device from anything that might malfunction along the way. VM's also allow us to use an operating system different from the one our device uses, in this case we will be using a Windows 11 Pro VM on a Macbook laptop.
+
+ (*If you are working on a Windows laptop already you can skip the first three steps and starts at step four (IIS)*)
 </p>
 <p>
 In Azure, create a resource group and title it "osTicketrg" then a virtual network under that same resource group titled "osticketrg-vnet". Afterwards create a VM with 2 vcpus, 8 GiB Memory and put it under the same resource group.
 </p>
- <img width="1701" alt="Screenshot 2025-05-29 at 11 36 38 AM" src="https://github.com/user-attachments/assets/b5acbb0b-579f-4f38-b558-d1ced7d62c7c" />
+ <img alt="Screenshot 2025-05-29 at 11 36 38 AM" src="https://github.com/user-attachments/assets/b5acbb0b-579f-4f38-b558-d1ced7d62c7c" height="80%" width="80%" />
 <br />
 <p>
 </p>
-<p>Next simply connect to your newly created VM using RDP using the public IPv4 address. If you are a Mac user you will have to download Microsoft Remote Desktop(RDP). 
+<p>Next, download Windows App from the App Store and launch it, then add a new PC and use your osTicketvm public IP address (highlighted above) as the PC name.
 </p>
-<img width="1092" alt="Screenshot 2025-05-29 at 11 37 31 AM" src="https://github.com/user-attachments/assets/0e159f71-7f90-453c-ba42-a7a671bd2919" />
+<p>
+ <img alt="Screenshot 2025-05-30 at 10 16 20 AM" src="https://github.com/user-attachments/assets/79e09dcb-1e15-4534-87b0-1e265743a428" height="40%" width="40%"/>
+</p>
+<p>After the VM is created in Windows App connect to it with the username and password created for the VM in Azure
+</p>
+<p><img alt="Screenshot 2025-05-30 at 10 26 25 AM" src="https://github.com/user-attachments/assets/b3b56e1e-fbe7-4c7d-9ff2-33750fbbf1af" height="80%" width="80%" /></p>
+<p>Once you have your VM open you will have to enable IIS (Internet Information Services). To do so, access the control panel then select uninstall a program. On the left, select "Turn windows features on or off". A new window appears with a list of features, scroll until you see "Internet Information Services" enable it then click OK.
+</p>
+<p><img alt="Screenshot 2025-05-30 at 10 42 49 AM" src="https://github.com/user-attachments/assets/c7544d51-8011-4a1a-b769-29088f722f94" height="80%" width="80%" />
+</p>
+<p>
+With IIS enabled we need to install Web Platform Installer. I have provided a link here: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+  That link will provide you with all of the material you need to download to get osTicket up and running. Simply click the link and install the Web Platform Installer
 </p>
 <br />
 
