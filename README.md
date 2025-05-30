@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 Using Microsoft Azure portal(portal.azure.com) we will create a virtual machine (VM) to use as a testing ground for this project and protect our physical device from anything that might malfunction along the way. VM's also allow us to use an operating system different from the one our device uses, in this case we will be using a Windows 11 Pro VM on a Macbook laptop.
 
- (*If you are working on a Windows laptop already you can skip the first three steps and starts at step four (IIS)*)
+ *(If you are working on a Windows laptop already you can skip the first three steps and starts at step four (IIS))*
 </p>
 <p>
 In Azure, create a resource group and title it "osTicketrg" then a virtual network under that same resource group titled "osticketrg-vnet". Afterwards create a VM with 2 vcpus, 8 GiB Memory and put it under the same resource group.
@@ -53,8 +53,18 @@ In Azure, create a resource group and title it "osTicketrg" then a virtual netwo
 <p><img alt="Screenshot 2025-05-30 at 10 42 49 AM" src="https://github.com/user-attachments/assets/c7544d51-8011-4a1a-b769-29088f722f94" height="80%" width="80%" />
 </p>
 <p>
-With IIS enabled we need to install Web Platform Installer. I have provided a link here: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
-  That link will provide you with all of the material you need to download to get osTicket up and running. Simply click the link and install the Web Platform Installer
+With IIS enabled the next step is to install the osTicket dependencies. I have provided a link that allows you to download a zip folder with all dependencies. Download it and unzip it. The folder should be called “osTicket-Installation-Files”
+
+*Link: https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD*
+
+One you have downloaded and unzip the folder, its contents should look like this:
 </p>
+<p>
+<img alt="Screenshot 2025-05-30 at 11 07 47 AM" src="https://github.com/user-attachments/assets/3944f94b-74eb-44e9-af4b-b9a061c744bf" height="80%" width="80%" />
+</p>
+<p>
+ 
+</p>
+<p>The first dependency we will install is PHP Manager. Double-click on "PHPManagerForIIS_V1.5.0.msi" to begin the installation process.</p>
 <br />
 
