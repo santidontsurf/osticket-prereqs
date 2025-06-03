@@ -96,6 +96,19 @@ One you have downloaded and unzip the folder, its contents should look like this
 </p>
 <p align="center"><img alt="Screenshot 2025-06-02 at 11 53 59 AM" src="https://github.com/user-attachments/assets/7d3f30da-b822-4509-a1f3-a13b328feb56" height="80%" width="80%"/>
 </p>
-<p>Then, install MySQL 5.5.62 "mysql-5.5.62-win32.msi"</p>
+<p>Then, install MySQL 5.5.62 "mysql-5.5.62-win32.msi"
+Choose "typical" out of the three setup options -> install</p>
+<p align="center"><img alt="Screenshot 2025-06-03 at 11 11 59 AM" src="https://github.com/user-attachments/assets/71aeb2f7-303d-4f45-a6b6-118841356c92" height="80%" width="80%"/>
+</p>
+<p>Make sure that you check "Launch the MySQLconfiguration wizard</p>
+<p align="center"><img alt="Screenshot 2025-06-03 at 11 13 16 AM" src="https://github.com/user-attachments/assets/19416432-70c3-4f7a-aa0d-141821b084b6" height="80%" width="80%"/>
+</p>
+<p align="center"><img alt="Screenshot 2025-06-03 at 11 15 34 AM" src="https://github.com/user-attachments/assets/499cca2c-3ff8-4cdf-9bb7-dbf483357470" height="80%" width="80%"/>
+</p>
+<p align="center"><img alt="Screenshot 2025-06-03 at 11 16 12 AM" src="https://github.com/user-attachments/assets/ab8a991e-0752-424f-a857-3c3d2a4d4a63" height="80%" width="80%"/>
+</p>
+
+
+<p>Then execute the configuration </p>
 <br />
 
