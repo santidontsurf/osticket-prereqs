@@ -50,9 +50,14 @@ In Azure, create a resource group and title it "osTicketrg" then a virtual netwo
 <p>After the VM is created in Windows App connect to it with the username and password created for the VM in Azure
 </p>
 <p align="center"><img alt="Screenshot 2025-05-30 at 10 26 25 AM" src="https://github.com/user-attachments/assets/b3b56e1e-fbe7-4c7d-9ff2-33750fbbf1af" height="80%" width="80%" /></p>
-<p>Once you have your VM open you will have to enable IIS (Internet Information Services). To do so, access the control panel then select uninstall a program. On the left, select "Turn windows features on or off". A new window appears with a list of features, scroll until you see "Internet Information Services" enable it then click OK.
+<p>Once you have your VM open you will have to enable IIS (Internet Information Services). To do so, access the control panel then select uninstall a program. On the left, select "Turn windows features on or off". A new window appears with a list of features, scroll until you see "Internet Information Services" enable it, then click on the "+" icon next to it, then find World Wide Web Services and make sure it's checked as well, and clink on the "+" icon next to it, then find Application Development Features and make sure it's checked as well, click "+", and make sure CGI is checked, then press OK to apply the changes.
 </p>
 <p align="center"><img alt="Screenshot 2025-05-30 at 10 42 49 AM" src="https://github.com/user-attachments/assets/c7544d51-8011-4a1a-b769-29088f722f94" height="80%" width="80%" />
+</p>
+<p>
+  
+</p>
+<p align="center"><img alt="Screenshot 2025-06-06 at 11 29 07 AM" src="https://github.com/user-attachments/assets/53437b70-303b-403f-a308-3e198bc743db" height="80%" width="80%" />
 </p>
 <p>
 With IIS enabled the next step is to install the osTicket dependencies. I have provided a link that allows you to download a zip folder with all dependencies. Download it and unzip it. The folder should be called “osTicket-Installation-Files”
@@ -107,11 +112,14 @@ One you have downloaded and unzip the folder, its contents should look like this
 </p>
 <p>
 </p>
-<p>Once configuration wizard is open you can choose "standard" configuration and proceed with the process until you are asked to create a password for the root account. Make sure that the password you create is secure and that you can remember it.</p>
+<p>Once configuration wizard is open you can choose "standard" configuration and proceed with the process until you are asked to create a password for the root account. Make sure that the password you create is secure and that you can remember it. Once you have created a password for the root account you can execute the configuration.</p>
 <p align="center"><img alt="Screenshot 2025-06-03 at 11 16 12 AM" src="https://github.com/user-attachments/assets/ab8a991e-0752-424f-a857-3c3d2a4d4a63" height="80%" width="80%"/>
 </p>
-
-
-<p>Once you have created a password for the root account you can execute the configuration. </p>
+<p> 
+</p>
+<p>Next, we'll search for Internet Information Services (IIS) Manager and open it as an administrator.</p>
+<p align="center"><img alt="Screenshot 2025-06-06 at 11 22 29 AM" src="https://github.com/user-attachments/assets/662ef2f8-e234-49c6-b2a8-ab07c17d5043" height="80%" width="80%" />
+</p>
+<p>Inside IIS, double-click on PHP Manager to open it, and under PHP Setup click "Register New PHP Version"  </p>
 <br />
 
