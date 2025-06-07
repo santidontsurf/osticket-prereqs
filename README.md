@@ -120,6 +120,16 @@ One you have downloaded and unzip the folder, its contents should look like this
 <p>Next, we'll search for Internet Information Services (IIS) Manager and open it as an administrator.</p>
 <p align="center"><img alt="Screenshot 2025-06-06 at 11 22 29 AM" src="https://github.com/user-attachments/assets/662ef2f8-e234-49c6-b2a8-ab07c17d5043" height="80%" width="80%" />
 </p>
-<p>Inside IIS, double-click on PHP Manager to open it, and under PHP Setup click "Register New PHP Version"  </p>
+<p>Inside IIS, double-click on PHP Manager to open it, and under PHP Setup click "Register New PHP Version" and travel to our PHP folder in the C drive and choose php-cgi.exe, then click OK. </p>
+<p align="center"><img alt="Screenshot 2025-06-07 at 10 12 00 AM" src="https://github.com/user-attachments/assets/9d10a367-ed5c-46b5-97cc-a6189347ad92" height="80%" width="80%" />
+</p>
+<p>Travel back to the main IIS window, on the upper right corner of the window click "Stop" then "Start" to refresh PHP Manager.</p>
+<p align="center"><img alt="Screenshot 2025-06-07 at 10 16 08 AM" src="https://github.com/user-attachments/assets/49d9c77e-405f-4c80-85dc-760bb22037f9" height="80%" width="80%"/>
+</p>
+<p>Next, travel back to the installation folder extract "osTicket-v1.15.8.zip". Once extracted, copy the upload folder that was inside into C:\inetpub\wwwroot. Once copied, rename the folder "osTicket".</p>
+<p align="center"><img alt="Screenshot 2025-06-07 at 10 26 30 AM" src="https://github.com/user-attachments/assets/3ad74406-000c-4a6c-a58f-bd061378bf0d" height="80%" width="80%" />
+</p>
+<
 <br />
+
 
