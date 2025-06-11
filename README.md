@@ -129,7 +129,19 @@ One you have downloaded and unzip the folder, its contents should look like this
 <p>Next, travel back to the installation folder extract "osTicket-v1.15.8.zip". Once extracted, copy the upload folder that was inside into C:\inetpub\wwwroot. Once copied, rename the folder "osTicket".</p>
 <p align="center"><img alt="Screenshot 2025-06-07 at 10 26 30 AM" src="https://github.com/user-attachments/assets/3ad74406-000c-4a6c-a58f-bd061378bf0d" height="80%" width="80%" />
 </p>
-<
+<p>Go back to IIS, click Stop, then Start again and click view sites, then on the left side of the page, double-click Default Web Site and open osTicket, then click "Browse *:80" to open osTicket. </p>
+<p align="center"><img alt="Screenshot 2025-06-11 at 10 33 00 AM" src="https://github.com/user-attachments/assets/4c5b358c-492d-4bca-897d-caf3e8f661e3" height="80%" width="80%" />
+</p>
+<p>With osTicket now open, note that there are some recommended dependencies that are yet to be installed.</p>
+<p align="center"> <img alt="Screenshot 2025-06-11 at 10 37 01 AM" src="https://github.com/user-attachments/assets/dc534bb1-ad15-4ae1-9998-fc18c5122ddf" height="80%" width="80%"/>
+</p>
+<p>Back on IIS, under Sites -> Default Web Sites -> osTicket, double-click on PHP Manager and click on "Enable or disable an extension". Then enable: php_imap.dll, php_intl.dll, and php_opcache.dll.
+</p>
+<p align="center"><img alt="Screenshot 2025-06-11 at 10 46 07 AM" src="https://github.com/user-attachments/assets/4870ffbb-2544-485d-8f3f-bbb7f0457d34" height="80%" width="80%" />
+</p>
+<p>Now refresh the osTicket website in your browser and notice the changes.</p>
+<p align="center"><img alt="Screenshot 2025-06-11 at 10 47 55 AM" src="https://github.com/user-attachments/assets/0fd7e079-be14-4da7-90a4-e4349ffd4927" height="80%" width="80%"/>
+</p>
 <br />
 
 
