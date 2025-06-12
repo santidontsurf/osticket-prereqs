@@ -140,7 +140,38 @@ One you have downloaded and unzip the folder, its contents should look like this
 <p align="center"><img alt="Screenshot 2025-06-11 at 10 46 07 AM" src="https://github.com/user-attachments/assets/4870ffbb-2544-485d-8f3f-bbb7f0457d34" height="80%" width="80%" />
 </p>
 <p>Now refresh the osTicket website in your browser and notice the changes.</p>
-<p align="center"><img alt="Screenshot 2025-06-11 at 10 47 55 AM" src="https://github.com/user-attachments/assets/0fd7e079-be14-4da7-90a4-e4349ffd4927" height="80%" width="80%"/>
+<p align="center"><img alt="Screenshot 2025-06-11 at 10 47 55 AM" src="https://github.com/user-attachments/assets/0fd7e079-be14-4da7-90a4-e4349ffd4927" height="80%" width="80%"  />
+</p>
+<p>Next, travel to our C drive in this order: C:\inetpub\wwwroot\osTicket\include\ then rename "ost-sampleconfig.php" to "ost-config.php" as shown below.</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 08 30 AM" src="https://github.com/user-attachments/assets/9dc65d41-5150-4d3e-b3e5-d6389be63213" height="80%" width="80%"/>
+</p>
+<p>Right click ost-config.php and go into Properties\Security\ and click Advanced to open the advanced security configurations under which you will open "Disable Inheritance" and choose "Remove All"
+</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 14 39 AM" src="https://github.com/user-attachments/assets/8e062503-bfab-4503-a18f-50ad40dd23b2" height="80%" width="80%"/>
+</p>
+<p>Then, choose Add to add new permissions, in the new tab choose "Select a principal" and enter Everyone and click "check names" then OK. 
+
+*(For security purpose it is not recommended to set up permissions for everyone when setting up osTicket as a service, this is only to be done in a controlled environment like the VM being used for this tutorial.)*
+</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 24 29 AM" src="https://github.com/user-attachments/assets/c9212801-af0c-457e-bd5b-bd76d78b64ff" height="80%" width="80%"/>
+</p>
+<p>One you select everyone, allow Full Control and click OK and close out, then select Apply and click OK to close out properties.</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 29 14 AM" src="https://github.com/user-attachments/assets/42900b6c-9192-4605-bc2c-fc258acb3b36" height="80%" width="80%"/>
+</p>
+<p>Now, osTicket has full control of all dependencies and configuration files needed. Travel back to the osTicket website and refresh it, then click Continue to move on with the set up process of the system. In this page you will create some basic information for your ticketing system, make sure not to click Install Now yet as we still net to configure the Database Settings.</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 37 08 AM" src="https://github.com/user-attachments/assets/ce753efd-c0a0-4420-97f7-ed762529b634" height="80%" width="80%" />
+</p>
+<p>Travel back to the “osTicket-Installation-Files” folder and install HeidiSQL by opening "HeidiSQL_12.3.0.6589_Setup". Hit next on everything then choose Install. Before you click Finish, make sure that Launch HeidiSQL is checked.</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 42 11 AM" src="https://github.com/user-attachments/assets/52e703aa-b436-4c8f-abef-7029db0d0843" height="80%" width="80%" />
+</p>
+<p>Press Skip on installing the latest version, and in the new page click "New" on the bottom left. Then use the same password you created in configuration wizard here, in the case of this tutorial it's "root" username and password. Then click Open. In this new tab, right-click on "Unnamed" and choose Create New->Database and name the new database "osTicket".  </p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 49 35 AM" src="https://github.com/user-attachments/assets/18322fc5-2eaa-46b5-97be-7b9256e55d97" height="80%" width="80%" />
+</p>
+<p>Travel back to the osTicket website and add the new information we created to the Database Settings then click Install Now.</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 52 25 AM" src="https://github.com/user-attachments/assets/6c4dd7c0-1d08-48fc-a49f-a916a6e409d6" height="80%" width="80%" />
+</p>
+<p>If you did everything correctly in this tutorial the next page should look like this:</p>
+<p align="center"><img alt="Screenshot 2025-06-12 at 11 53 24 AM" src="https://github.com/user-attachments/assets/9f709418-04d5-49da-8b19-315f1500337a" height="80%" width="80%"/>
 </p>
 <br />
 
