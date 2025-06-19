@@ -190,7 +190,7 @@ Once you have downloaded and unzipped the folder, its contents should look like 
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 53 24 AM" src="https://github.com/user-attachments/assets/9f709418-04d5-49da-8b19-315f1500337a" height="80%" width="80%"/>
 </p>
 <br />
-<p>Congratulations! You have successfully installed the osTicket system for your organization. For the second of this tutorial, please travel to:</p>
+<p>Congratulations! You have successfully installed the osTicket system for your organization. The second part of this tutorial will focus on the internal configurations of osTicket, to access it please travel to:</p>
 
 [osTicket:Post-Installation Configuration](https://github.com/santidontsurf/post-install-config)
 
