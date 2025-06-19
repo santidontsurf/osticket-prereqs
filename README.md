@@ -48,11 +48,11 @@ In Azure, create a resource group and title it "osTicketrg" then a virtual netwo
  <img alt="Screenshot 2025-05-30 at 10 16 20 AM" src="https://github.com/user-attachments/assets/79e09dcb-1e15-4534-87b0-1e265743a428" height="40%" width="40%"/>
 </p>
 <br />
-<p>After the VM is created in Windows App connect to it with the username and password created for the VM in Azure
+<p>After the VM is created in Windows App, connect to it with the username and password created for the VM in Azure
 </p>
 <p align="center"><img alt="Screenshot 2025-05-30 at 10 26 25 AM" src="https://github.com/user-attachments/assets/b3b56e1e-fbe7-4c7d-9ff2-33750fbbf1af" height="80%" width="80%" /></p>
 <br />
-<p>Once you have your VM open you will have to enable IIS (Internet Information Services). To do so, access the control panel then select uninstall a program. On the left, select "Turn windows features on or off". A new window appears with a list of features, scroll until you see "Internet Information Services" enable it, then click on the "+" icon next to it, then find World Wide Web Services and make sure it's checked as well, and clink on the "+" icon next to it, then find Application Development Features and make sure it's checked as well, click "+", and make sure CGI is checked, then press OK to apply the changes.
+<p>Once you have your VM open you will have to enable IIS (Internet Information Services). To do so, access the control panel and then select uninstall a program. On the left, select "Turn Windows features on or off". A new window appears with a list of features, scroll until you see "Internet Information Services" Enable it, then click on the "+" icon next to it, then find World Wide Web Services and make sure it's checked as well, and click on the "+" icon next to it, then find Application Development Features and make sure it's checked as well, click "+", and make sure CGI is checked, then press OK to apply the changes.
 </p>
 <p align="center"><img alt="Screenshot 2025-05-30 at 10 42 49 AM" src="https://github.com/user-attachments/assets/c7544d51-8011-4a1a-b769-29088f722f94" height="80%" width="80%" />
 </p>
@@ -67,7 +67,7 @@ With IIS enabled the next step is to install the osTicket dependencies. I have p
 
 *Link: https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD*
 
-One you have downloaded and unzip the folder, its contents should look like this:
+Once you have downloaded and unzipped the folder, its contents should look like this:
 </p>
 <p align="center">
 <img alt="Screenshot 2025-05-30 at 11 07 47 AM" src="https://github.com/user-attachments/assets/3944f94b-74eb-44e9-af4b-b9a061c744bf" height="80%" width="80%" />
@@ -89,7 +89,7 @@ One you have downloaded and unzip the folder, its contents should look like this
 </p>
 <br />
 <p>
-  Once in, choose Extract All from the top menu and choose the extraction destination folder as our new PHP directory back in the C:\ drive 
+  Once in, choose "Extract All" from the top menu and choose the extraction destination folder as our new PHP directory back in the C:\ drive 
 </p>
 <p align="center"><img alt="Screenshot 2025-06-02 at 11 38 34 AM" src="https://github.com/user-attachments/assets/fbbf6960-bd05-455c-82e3-58783f02767f" height="60%" width="80%" />
 </p>
@@ -129,7 +129,7 @@ One you have downloaded and unzip the folder, its contents should look like this
 <p align="center"><img alt="Screenshot 2025-06-07 at 10 16 08 AM" src="https://github.com/user-attachments/assets/49d9c77e-405f-4c80-85dc-760bb22037f9" height="80%" width="80%"/>
 </p>
 <br />
-<p>Next, travel back to the installation folder extract "osTicket-v1.15.8.zip". Once extracted, copy the upload folder that was inside into C:\inetpub\wwwroot. Once copied, rename the folder "osTicket".</p>
+<p>Next, travel back to the installation folder and extract "osTicket-v1.15.8.zip". Once extracted, copy the upload folder that was inside into C:\inetpub\wwwroot. Once copied, rename the folder "osTicket".</p>
 <p align="center"><img alt="Screenshot 2025-06-07 at 10 26 30 AM" src="https://github.com/user-attachments/assets/3ad74406-000c-4a6c-a58f-bd061378bf0d" height="80%" width="80%" />
 </p>
 <br />
@@ -154,12 +154,12 @@ One you have downloaded and unzip the folder, its contents should look like this
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 08 30 AM" src="https://github.com/user-attachments/assets/9dc65d41-5150-4d3e-b3e5-d6389be63213" height="80%" width="80%"/>
 </p>
 <br />
-<p>Right click ost-config.php and go into Properties\Security\ and click Advanced to open the advanced security configurations under which you will open "Disable Inheritance" and choose "Remove All"
+<p>Right-click ost-config.php and go into Properties\Security\ and click Advanced to open the advanced security configurations under which you will open "Disable Inheritance" and choose "Remove All"
 </p>
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 14 39 AM" src="https://github.com/user-attachments/assets/8e062503-bfab-4503-a18f-50ad40dd23b2" height="80%" width="80%"/>
 </p>
 <br />
-<p>Then, choose Add to add new permissions, in the new tab choose "Select a principal" and enter Everyone and click "check names" then OK. 
+<p>Then, choose "Add" to add new permissions, in the new tab choose "Select a principal" and enter Everyone and click "check names" then OK. 
 
 *(For security purpose it is not recommended to set up permissions for everyone when setting up osTicket as a service, this is only to be done in a controlled environment like the VM being used for this tutorial.)*
 </p>
@@ -170,19 +170,19 @@ One you have downloaded and unzip the folder, its contents should look like this
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 29 14 AM" src="https://github.com/user-attachments/assets/42900b6c-9192-4605-bc2c-fc258acb3b36" height="80%" width="80%"/>
 </p>
 <br />
-<p>Now, osTicket has full control of all dependencies and configuration files needed. Travel back to the osTicket website and refresh it, then click Continue to move on with the set up process of the system. In this page you will create some basic information for your ticketing system, make sure not to click Install Now yet as we still net to configure the Database Settings.</p>
+<p>Now, osTicket has full control of all dependencies and configuration files needed. Travel back to the osTicket website and refresh it, then click Continue to move on with the set up process of the system. In this page you will create some basic information for your ticketing system, make sure not to click "Install Now" yet as we still net to configure the Database Settings.</p>
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 37 08 AM" src="https://github.com/user-attachments/assets/ce753efd-c0a0-4420-97f7-ed762529b634" height="80%" width="80%" />
 </p>
 <br />
-<p>Travel back to the “osTicket-Installation-Files” folder and install HeidiSQL by opening "HeidiSQL_12.3.0.6589_Setup". Hit next on everything then choose Install. Before you click Finish, make sure that Launch HeidiSQL is checked.</p>
+<p>Travel back to the “osTicket-Installation-Files” folder and install HeidiSQL by opening "HeidiSQL_12.3.0.6589_Setup". Hit next on everything then choose "Install". Before you click "Finish", make sure that Launch HeidiSQL is checked.</p>
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 42 11 AM" src="https://github.com/user-attachments/assets/52e703aa-b436-4c8f-abef-7029db0d0843" height="80%" width="80%" />
 </p>
 <br />
-<p>Press Skip on installing the latest version, and in the new page click "New" on the bottom left. Then use the same password you created in configuration wizard here, in the case of this tutorial it's "root" username and password. Then click Open. In this new tab, right-click on "Unnamed" and choose Create New->Database and name the new database "osTicket".  </p>
+<p>Press "Skip" on installing the latest version, and in the new page click "New" on the bottom left. Then use the same password you created in configuration wizard here, in the case of this tutorial it's "root" username and password. Then click "Open". In this new tab, right-click on "Unnamed" and choose Create New->Database and name the new database "osTicket".  </p>
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 49 35 AM" src="https://github.com/user-attachments/assets/18322fc5-2eaa-46b5-97be-7b9256e55d97" height="80%" width="80%" />
 </p>
 <br />
-<p>Travel back to the osTicket website and add the new information we created to the Database Settings then click Install Now.</p>
+<p>Travel back to the osTicket website and add the new information we created to the Database Settings then click "Install Now".</p>
 <p align="center"><img alt="Screenshot 2025-06-12 at 11 52 25 AM" src="https://github.com/user-attachments/assets/6c4dd7c0-1d08-48fc-a49f-a916a6e409d6" height="80%" width="80%" />
 </p>
 <br />
